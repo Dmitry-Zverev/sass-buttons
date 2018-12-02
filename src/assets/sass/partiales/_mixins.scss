@@ -1,0 +1,54 @@
+//types of mixins  (reminder)
+
+@mixin mixin{}
+@mixin mixin-with-parameters($a, $b){}
+@mixin mixin-rest($a...){}
+@mixin mixin-content{
+    @content;
+}
+
+
+
+@mixin google-fonts($font-name){
+    @import url('https://fonts.googleapis.com/css?family=#{$font-name}');
+}
+
+@mixin font($fs:16px, $fw: 600, $ff:#{$font-name}){
+    font: {
+        family: $ff;
+        size: $fs;
+        weight: $fw;
+    }
+}
+@mixin size($y, $x){
+    padding: $y $x;
+}
+
+
+@mixin btn{
+    @each $color in $colors{
+        &_#{nth($color, 1)} {
+            background: nth($color, 2);
+            
+            @if(lightness(nth($color, 2)) < 50){
+                color: #fff;     
+            }@else{
+                color: #000;
+            }
+            &:hover{
+                background: darken(nth($color, 2), 5%); 
+            }
+            &-outline{
+                background: transparent;
+                border: 1px solid nth($color, 2);
+                color: nth($color, 2);
+                
+                &:hover{
+                    background: nth($color, 2);
+                    color: #fff;     
+                }
+            }
+        }
+    }
+}
+

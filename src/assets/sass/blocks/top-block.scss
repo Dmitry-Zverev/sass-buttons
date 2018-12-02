@@ -1,0 +1,28 @@
+
+.top-block{
+    height: 100vh;
+    
+    &__title{
+        text-align: center;
+        margin: 0;
+    }
+    .block-buttons{
+        margin: 30px auto;
+        text-align: center;
+        vertical-align: middle;
+        .btn{
+            border-radius: 3px;
+            border: none;
+            padding: 10px 15px;
+            margin: 0 15px;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            @include btn();
+            &_lg{
+                @include size(15px, 20px);
+                @include font(18px, 400);
+            }
+        }
+    }
+}

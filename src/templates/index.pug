@@ -1,0 +1,17 @@
+include ../assets/pug/page-components/header.pug
+.top-block.container
+    h2.top-block__title кнопки
+    .block-buttons
+        - var colors = ['red', 'blue', 'green', 'orange', 'yellow']
+        .row
+            each val, index in colors 
+                button(class="btn btn_" + val)=val + ' button'
+            if index == 4
+                button(class="btn btn_" + val + " btn_lg")=val + ' button'
+        .row
+            each val in colors
+                button(class="btn btn_" + val + " btn_lg")=val + ' button'
+        .row
+            each val in colors
+                button(class="btn btn_" + val + "-outline btn_lg")=val + ' button'
+include ../assets/pug/page-components/footer.pug

@@ -1,0 +1,29 @@
+//reboot
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+// Project variables
+
+@import "partiales/vars";
+@import "partiales/mixins";
+@import "partiales/common";
+
+//Default styles
+
+
+@include google-fonts($font-name);
+    
+    
+body{
+    @include font();
+}
+
+
+// Blocks
+
+@import "blocks/header";
+@import "blocks/top-block";
+@import "blocks/footer";
+

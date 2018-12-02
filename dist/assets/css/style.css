@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Noto Sans SC");
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: 30px 0;
+}
+
+body {
+    font-family: Noto Sans SC;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.top-block {
+    height: 100vh;
+}
+
+.top-block__title {
+    text-align: center;
+    margin: 0;
+}
+
+.top-block .block-buttons {
+    margin: 30px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.top-block .block-buttons .btn {
+    border-radius: 3px;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 15px;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.top-block .block-buttons .btn_red {
+    background: #ed2222;
+    color: #000;
+}
+
+.top-block .block-buttons .btn_red:hover {
+    background: #e31212;
+}
+
+.top-block .block-buttons .btn_red-outline {
+    background: transparent;
+    border: 1px solid #ed2222;
+    color: #ed2222;
+}
+
+.top-block .block-buttons .btn_red-outline:hover {
+    background: #ed2222;
+    color: #fff;
+}
+
+.top-block .block-buttons .btn_blue {
+    background: #0089d1;
+    color: #fff;
+}
+
+.top-block .block-buttons .btn_blue:hover {
+    background: #0078b8;
+}
+
+.top-block .block-buttons .btn_blue-outline {
+    background: transparent;
+    border: 1px solid #0089d1;
+    color: #0089d1;
+}
+
+.top-block .block-buttons .btn_blue-outline:hover {
+    background: #0089d1;
+    color: #fff;
+}
+
+.top-block .block-buttons .btn_green {
+    background: #108b3f;
+    color: #fff;
+}
+
+.top-block .block-buttons .btn_green:hover {
+    background: #0d7435;
+}
+
+.top-block .block-buttons .btn_green-outline {
+    background: transparent;
+    border: 1px solid #108b3f;
+    color: #108b3f;
+}
+
+.top-block .block-buttons .btn_green-outline:hover {
+    background: #108b3f;
+    color: #fff;
+}
+
+.top-block .block-buttons .btn_orange {
+    background: #fca604;
+    color: #000;
+}
+
+.top-block .block-buttons .btn_orange:hover {
+    background: #e49603;
+}
+
+.top-block .block-buttons .btn_orange-outline {
+    background: transparent;
+    border: 1px solid #fca604;
+    color: #fca604;
+}
+
+.top-block .block-buttons .btn_orange-outline:hover {
+    background: #fca604;
+    color: #fff;
+}
+
+.top-block .block-buttons .btn_yellow {
+    background: #ffe200;
+    color: #000;
+}
+
+.top-block .block-buttons .btn_yellow:hover {
+    background: #e6cb00;
+}
+
+.top-block .block-buttons .btn_yellow-outline {
+    background: transparent;
+    border: 1px solid #ffe200;
+    color: #ffe200;
+}
+
+.top-block .block-buttons .btn_yellow-outline:hover {
+    background: #ffe200;
+    color: #fff;
+}
+
+.top-block .block-buttons .btn_lg {
+    padding: 15px 20px;
+    font-family: Noto Sans SC;
+    font-size: 18px;
+    font-weight: 400;
+}
